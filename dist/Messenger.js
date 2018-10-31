@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.PersistentMenuItem = exports.PersistentMenu = exports.GetStartedButton = exports.GreetingText = exports.QuickReply = exports.QuickReplies = exports.ListTemplate = exports.ReceiptTemplate = exports.GenericTemplate = exports.ButtonTemplate = exports.File = exports.Video = exports.Audio = exports.Image = exports.Element = exports.DefaultAction = exports.Adjustment = exports.Summary = exports.Address = exports.Button = exports.Text = exports.Messenger = undefined;
+exports.PersistentMenuItem = exports.PersistentMenu = exports.GreetingText = exports.QuickReply = exports.QuickReplies = exports.OpenGraphTemplate = exports.ListTemplate = exports.ReceiptTemplate = exports.GenericTemplate = exports.ButtonTemplate = exports.File = exports.Video = exports.Audio = exports.Image = exports.Element = exports.OpenGraphElement = exports.DefaultAction = exports.Adjustment = exports.Summary = exports.Address = exports.Button = exports.Text = exports.Messenger = undefined;
 
 var _events = require('events');
 
@@ -495,6 +495,7 @@ class Messenger extends _events2.default {
     };
     return this.setMessengerProfile(params);
   }
+
   /**
    * Deletes the target audience
    * @return {Object} JSON Response object
@@ -535,6 +536,7 @@ exports.Address = _elements.Address;
 exports.Summary = _elements.Summary;
 exports.Adjustment = _elements.Adjustment;
 exports.DefaultAction = _elements.DefaultAction;
+exports.OpenGraphElement = _elements.OpenGraphElement;
 exports.Element = _elements.Element;
 exports.Image = _attachments.Image;
 exports.Audio = _attachments.Audio;
@@ -544,9 +546,9 @@ exports.ButtonTemplate = _templates.ButtonTemplate;
 exports.GenericTemplate = _templates.GenericTemplate;
 exports.ReceiptTemplate = _templates.ReceiptTemplate;
 exports.ListTemplate = _templates.ListTemplate;
+exports.OpenGraphTemplate = _templates.OpenGraphTemplate;
 exports.QuickReplies = _QuickReplies.QuickReplies;
 exports.QuickReply = _QuickReplies.QuickReply;
 exports.GreetingText = _messenger_profile.GreetingText;
-exports.GetStartedButton = _messenger_profile.GetStartedButton;
 exports.PersistentMenu = _messenger_profile.PersistentMenu;
 exports.PersistentMenuItem = _messenger_profile.PersistentMenuItem;

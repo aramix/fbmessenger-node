@@ -6,12 +6,8 @@ Object.defineProperty(exports, "__esModule", {
 
 var _constants = require('../constants');
 
-var _constants2 = _interopRequireDefault(_constants);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
 class OpenGraphElement {
-  constructor({ url, buttons = '' }) {
+  constructor({ url, buttons = [] }) {
     this.url = url;
     this.buttons = buttons;
 
@@ -19,9 +15,9 @@ class OpenGraphElement {
       url: this.url
     };
 
-    if (this.buttons) {
-      if (this.buttons.length > _constants2.default) {
-        throw new Error(`Maximum of ${_constants2.default} buttons are allowed when sending via Send API.`);
+    if (this.buttons.length) {
+      if (this.buttons.length > _constants.OPEN_GRAPH_MAX_BUTTONS) {
+        throw new Error(`Open graph templates sent via the Send API support a maximum of ${_constants.OPEN_GRAPH_MAX_BUTTONS} buttons of any type.`);
       }
       res.buttons = this.buttons;
     }

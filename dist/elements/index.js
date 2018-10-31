@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.DefaultAction = exports.Adjustment = exports.Summary = exports.Element = exports.Address = exports.Button = exports.Text = undefined;
+exports.OpenGraphElement = exports.DefaultAction = exports.Adjustment = exports.Summary = exports.Element = exports.Address = exports.Button = exports.Text = undefined;
 
 var _Text = require('./Text');
 
@@ -33,6 +33,10 @@ var _DefaultAction = require('./DefaultAction');
 
 var _DefaultAction2 = _interopRequireDefault(_DefaultAction);
 
+var _OpenGraphElement = require('./OpenGraphElement');
+
+var _OpenGraphElement2 = _interopRequireDefault(_OpenGraphElement);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.Text = _Text2.default;
@@ -42,3 +46,4 @@ exports.Element = _Element2.default;
 exports.Summary = _Summary2.default;
 exports.Adjustment = _Adjustment2.default;
 exports.DefaultAction = _DefaultAction2.default;
+exports.OpenGraphElement = _OpenGraphElement2.default;

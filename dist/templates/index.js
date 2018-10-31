@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.ListTemplate = exports.ReceiptTemplate = exports.GenericTemplate = exports.ButtonTemplate = undefined;
+exports.OpenGraphTemplate = exports.ListTemplate = exports.ReceiptTemplate = exports.GenericTemplate = exports.ButtonTemplate = undefined;
 
 var _ButtonTemplate = require('./ButtonTemplate');
 
@@ -21,9 +21,14 @@ var _ListTemplate = require('./ListTemplate');
 
 var _ListTemplate2 = _interopRequireDefault(_ListTemplate);
 
+var _OpenGraphTemplate = require('./OpenGraphTemplate');
+
+var _OpenGraphTemplate2 = _interopRequireDefault(_OpenGraphTemplate);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.ButtonTemplate = _ButtonTemplate2.default;
 exports.GenericTemplate = _GenericTemplate2.default;
 exports.ReceiptTemplate = _ReceiptTemplate2.default;
 exports.ListTemplate = _ListTemplate2.default;
+exports.OpenGraphTemplate = _OpenGraphTemplate2.default;
