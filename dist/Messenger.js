@@ -129,7 +129,7 @@ class Messenger extends _events2.default {
               throw new Error('This message is sent outside of allowed window. You need page_messaging_subscriptions permission to be able to do it.');
             case 2018108:
             default:
-              throw new Error('This Person Cannot Receive Messages: This person isn\'t receiving messages from you right now.');
+              throw new Error("This Person Cannot Receive Messages: This person isn't receiving messages from you right now.");
           }
         case 200:
           switch (result.error.subcode) {
@@ -187,7 +187,7 @@ class Messenger extends _events2.default {
       throw new Error('A user ID is required.');
     }
 
-    const fields = ['first_name', 'last_name', 'profile_pic', 'locale', 'timezone', 'gender', 'is_payment_enabled', 'last_ad_referral'].join();
+    const fields = ['first_name', 'last_name', 'profile_pic', 'locale', 'timezone', 'gender'].join();
 
     const url = this.buildURL(id, {
       fields
@@ -280,9 +280,9 @@ class Messenger extends _events2.default {
   }
 
   /**
-  * Subscribes an app to a page
-  * @return {Object} JSON Response object
-  */
+   * Subscribes an app to a page
+   * @return {Object} JSON Response object
+   */
   subscribeAppToPage() {
     const url = this.buildURL('me/subscribed_apps');
     return this.post(url);
